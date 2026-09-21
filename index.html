@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8674d629b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header Name -->
+      <h2>Currency Converter</h2>
+
+      <div class="input">
+        <p>Enter Amount</p>
+
+        <input type="text" value="100" id="input__amount" />
+      </div>
+
+      <div class="country-container">
+        <div class="from div">
+          <p class="title">From</p>
+          <div class="select-container">
+            <img src="" />
+            <select name="from" id="selection" class="fromCurr"></select>
+          </div>
+        </div>
+
+        <div class="swap__icon">
+          <i class="fa-solid fa-right-left" id="change__btn"></i>
+        </div>
+
+        <div class="to div">
+          <p class="title">To</p>
+          <div class="select-container">
+            <img src="" />
+            <select name="to" id="selection" class="toCurr"></select>
+          </div>
+        </div>
+      </div>
+
+      <div class="converter-container">
+        <p class="output"></p>
+
+        <button class="exchange__btn">Get Exchange Rate</button>
+      </div>
+    </div>
+
+    <script src="./codes.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
