@@ -38,7 +38,7 @@ const updateFlag = (element) => {
   img.src = imgSrc;
 };
 
-changeBtn.addEventListener("click", () => {
+const exChange = function () {
   let tempCurr = fromCurr.value;
   fromCurr.value = toCurr.value;
   toCurr.value = tempCurr;
@@ -46,7 +46,7 @@ changeBtn.addEventListener("click", () => {
   updateFlag(fromCurr);
   updateFlag(toCurr);
   updateExchangeRate();
-});
+};
 
 const updateExchangeRate = async function () {
   let amount = input.value;
@@ -70,3 +70,4 @@ const updateExchangeRate = async function () {
 
 btn.addEventListener("click", updateExchangeRate);
 window.addEventListener("load", updateExchangeRate);
+window.addEventListener("load", exChange);
